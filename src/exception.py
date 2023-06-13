@@ -36,8 +36,4 @@ if __name__ == "__main__":
         level=logging.INFO,
     )
 
-    try:
-        a = 1 / 0
-    except Exception as e:
-        logging.info("Divide error")
-        raise CustomException(str(e), sys)
+    
